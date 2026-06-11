@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-outer-container">
+        <div class="search-section">
+            <input type="text" id="search-input" placeholder="hello" autocomplete="off">
+            <div class="divider"></div>
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="display-card" class="display-card hidden">
+            <div class="info-row">
+                <span class="label">Word:</span>
+                <span class="value" id="word-val"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">phonetics:</span>
+                <span class="value" id="phonetic-val"></span>
+            </div>
+            <div class="audio-row" id="audio-wrapper">
+                <audio id="audio-player" controls src=""></audio>
+            </div>
+            <div class="info-row">
+                <span class="label">Definition</span>
+                <span class="value" id="definition-val"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Example</span>
+                <span class="value" id="example-val"></span>
+            </div>
+            <div class="info-row font-italic">
+                <span class="value" id="pos-val"></span>
+            </div>
+            <div class="info-row hidden" id="relations-row">
+                <div class="extra-meta"><strong style="color: #60a5fa;">Synonyms:</strong> <span id="syn-val"></span></div>
+                <div class="extra-meta" style="margin-top: 5px;"><strong style="color: #f87171;">Antonyms:</strong> <span id="ant-val"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
